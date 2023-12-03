@@ -1,0 +1,23 @@
+def length_of_last_word(s):
+    trimmed_s = s.strip()
+    last_word_length = 0
+
+    for char in trimmed_s:
+        if char == ' ':
+            last_word_length = 0
+        else:
+            last_word_length += 1
+
+    return last_word_length
+
+input_string1 = "Hello World"
+input_string2 = "   fly me   to   the moon  "
+input_string3 = "luffy is still joyboy"
+
+result1 = length_of_last_word(input_string1)
+result2 = length_of_last_word(input_string2)
+result3 = length_of_last_word(input_string3)
+
+print(result1)  
+print(result2)  
+print(result3)  
